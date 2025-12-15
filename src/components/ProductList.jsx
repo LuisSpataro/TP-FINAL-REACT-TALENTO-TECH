@@ -1,14 +1,18 @@
 // src/components/ProductList.jsx
 import React, { useState, useEffect } from 'react';
+// 1. Importar useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     
-    // Asumiendo que el JSON está en public/data/products.json
+    // 2. Inicializar useNavigate
+    const navigate = useNavigate(); 
+    
+    // Lógica de fetch (sin cambios)
     useEffect(() => {
-        // CORRECCIÓN 1: Asegúrate de que la ruta de fetch use la barra inicial para apuntar a /public
         fetch('/data/products.json') 
             .then(res => {
                 if (!res.ok) {
@@ -34,9 +38,10 @@ const ProductList = () => {
     if (loading) return <p className="loading-message">Cargando productos...</p>;
     if (error) return <p className="error-message">{error}</p>;
 
-    const handleCardClick = (product) => {
-        // Lógica de navegación.
-        console.log("Producto seleccionado para ver detalles:", product.name);
+    // 3. Función de Navegación Corregida
+    const handleCardClick = (productId) => {
+        // Usamos navigate para ir a la ruta dinámica: /producto/ID_DEL_PRODUCTO
+        navigate(`/producto/${productId}`);
     };
 
     return (
@@ -46,21 +51,17 @@ const ProductList = () => {
                 {products.map((product, index) => {
                     const tag = index < 3 ? "NUEVO" : "OFERTA";
                     
-                    // Asumimos que product.images[0] contiene "img/nombre.jpg"
                     const imagePath = product.images[0];
-                    
-                    // Verificamos si la ruta ya tiene la barra inicial, si no, la agregamos
-                    // Tu JSON tiene "img/top-01.jpeg". La queremos convertir en "/img/top-01.jpeg"
                     const finalImagePath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
 
                     return (
                         <div 
                             className="product-card" 
                             key={product.id || index}
-                            onClick={() => handleCardClick(product)}
+                            // 4. Llamar a handleCardClick con el ID del producto
+                            onClick={() => handleCardClick(product.id)}
                         > 
                             {tag && <p className="tag">{tag}</p>}
-                            {/* CORRECCIÓN 2: Uso de la ruta absoluta con / inicial */}
                             <img src={finalImagePath} alt={product.name} /> 
                             <p className="name">{product.name}</p>
                             <p className="price">${product.price.toLocaleString("es-AR")}</p>
