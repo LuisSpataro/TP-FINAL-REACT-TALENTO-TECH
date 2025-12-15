@@ -1,0 +1,11 @@
+total 132
+-rwxrwxrwx 1 user4 user4 38832 dic 15 17:15 andreani.png
+-rwxrwxrwx 1 user4 user4 22963 dic 15 17:11 bus-pack.png
+-rwxrwxrwx 1 user4 user4  7764 dic 15 17:14 Correo-Argentino.svg
+-rwxrwxrwx 1 user4 user4  4404 dic 15 17:12 crucero-express.png
+-rwxrwxrwx 1 user4 user4     0 dic 15 17:31 logos.txt
+-rwxrwxrwx 1 user4 user4     0 dic 15 17:30 ls
+-rwxrwxrwx 1 user4 user4 11469 dic 15 17:12 md-cargas.svg
+-rwxrwxrwx 1 user4 user4  1590 dic 15 17:15 oca.webp
+-rwxrwxrwx 1 user4 user4 23781 dic 15 17:12 ruta-cargo.jpeg
+-rwxrwxrwx 1 user4 user4  8638 dic 15 17:10 tienda.-cargo.png

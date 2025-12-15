@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "Top con Bretel Deportivo",
+    "type": "mujer",
+    "price": 4500,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/top-01.jpeg", "img/top-01-01.jpeg"],
+    "notes": ["Microfibra con lycra premium", "Variedad de colores"]
+  },
+  {
+    "id": 2,
+    "name": "Top Gofrado",
+    "type": "mujer",
+    "price": 5500,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/top-02.jpeg", "img/top-01-01.jpeg"],
+    "notes": ["Microfibra con lycra", "Consultar stock por colores"]
+  },
+  {
+    "id": 3,
+    "name": "Crop Top",
+    "type": "mujer",
+    "price": 7500,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "images": ["img/crop-top-01-00.jpeg", "img/crop-top-01-01.jpeg"],
+    "notes": ["Negro, fucsia, crema y gris cemento"]
+  },
+  {
+    "id": 4,
+    "name": "Top Deportivo Ancho",
+    "type": "mujer",
+    "price": 5500,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/top-dep-ancho-01-00.jpeg", "img/top-dep-ancho-01-01.jpeg"]
+  },
+  {
+    "id": 5,
+    "name": "Dúo Crop Top",
+    "type": "mujer",
+    "price": 12000,
+    "sizes": ["S", "M", "L"],
+    "images": ["img/duo-crop-top-01-00.jpeg"],
+    "notes": ["Top combinado a elección"]
+  },
+  {
+    "id": 6,
+    "name": "Short Seamless Prelavado",
+    "type": "mujer",
+    "price": 8500,
+    "sizes": ["S/M", "L/XL"],
+    "images": ["img/short-seamless-01-00.jpeg", "img/short-seamless-01-01.jpeg"],
+    "notes": ["Cintura faja", "Frunce push up", "Batik prelavado"]
+  },
+  {
+    "id": 7,
+    "name": "Short Sublimado Premium",
+    "type": "mujer",
+    "price": 6000,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "images": ["img/short-sub-premium-01-00.jpeg", "img/short-sub-premium-01-01.jpeg"],
+    "notes": ["Suplex sublimado", "Diseños exclusivos"]
+  },
+  {
+    "id": 8,
+    "name": "Short Básico Lycra",
+    "type": "mujer",
+    "price": 4500,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/short-bas-lycra-01-00.jpeg", "img/short-bas-lycra-01-01.jpeg"],
+    "notes": ["Negro y gris", "Cintura alta"]
+  },
+  {
+    "id": 9,
+    "name": "Biker Sublimada",
+    "type": "mujer",
+    "price": 6500,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/short-biker-sub-01-00.jpeg", "img/short-biker-sub-01-01.jpeg"]
+  },
+  {
+    "id": 10,
+    "name": "Calza Biker",
+    "type": "mujer",
+    "price": 4700,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/calza-biker-01-00.jpeg", "img/calza-biker-01-01.jpeg"],
+    "notes": ["Negro y gris", "Cintura alta"]
+  },
+  {
+    "id": 11,
+    "name": "Short Pollera Nike",
+    "type": "mujer",
+    "price": 7200,
+    "sizes": ["1", "2", "3", "4", "5", "6"],
+    "images": ["img/short-pollera-nike-01-00.jpeg", "img/short-pollera-nike-01-01.jpeg"]
+  },
+  {
+    "id": 12,
+    "name": "Short Pollera Sublimada",
+    "type": "mujer",
+    "price": 8500,
+    "sizes": ["1", "2", "3", "4", "5"],
+    "images": ["img/short-pollera-sub-01-00.jpeg", "img/short-pollera-sub-01-01.jpeg"]
+  },
+  {
+    "id": 13,
+    "name": "Short Under con Calza",
+    "type": "hombre",
+    "price": 7500,
+    "sizes": ["1", "2", "3", "4", "5", "6"],
+    "images": ["img/short-calza-hombre-01-00.jpeg", "img/short-calza-hombre-01-01.jpeg"],
+    "notes": ["Calza lycra", "Cordón regulable"]
+  },
+  {
+    "id": 14,
+    "name": "Remera de Algodón",
+    "type": "hombre",
+    "price": 6300,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "images": ["img/remera-algodon-hombre-01-00.jpeg"],
+    "notes": ["Algodón peinado"]
+  }
+]
+

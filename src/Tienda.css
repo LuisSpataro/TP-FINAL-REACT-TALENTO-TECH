@@ -1,0 +1,91 @@
+/* ===== LAYOUT GENERAL ===== */
+.tienda-layout {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* ===== SIDEBAR ===== */
+.tienda-sidebar {
+    width: 240px;
+    background-color: #000;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+/* ===== CATÁLOGO ===== */
+.tienda-catalogo {
+    flex: 1;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+}
+
+.producto-imagenes img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto-info {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.producto-botones button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.producto-botones button:hover {
+    background-color: #e65c00;
+}
+
+
+/* Reutiliza tu product-card del CSS base */
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .tienda-layout {
+        flex-direction: column;
+    }
+
+    .tienda-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

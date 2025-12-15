@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Andreani",
+    "logo": "img/logos-envios/andreani.png"
+  },
+  {
+    "name": "Buspack",
+    "logo": "img/logos-envios/bus-pack.png"
+  },
+  {
+    "name": "Crucero Express",
+    "logo": "img/logos-envios/crucero-express.png"
+  },
+  {
+    "name": "MD Cargas",
+    "logo": "img/logos-envios/md-cargas.svg"
+  },
+  {
+    "name": "Ruta Cargo",
+    "logo": "img/logos-envios/ruta-cargo.jpeg"
+  },
+  {
+    "name": "Correo Argentino",
+    "logo": "img/logos-envios/Correo-Argentino.svg"
+  },
+  {
+    "name": "Oca",
+    "logo": "img/logos-envios/oca.webp"
+  },
+  {
+    "name": "Tienda Cargo",
+    "logo": "img/logos-envios/tienda-cargo.png"
+  }
+]

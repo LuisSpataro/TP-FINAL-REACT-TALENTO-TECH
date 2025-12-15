@@ -1,0 +1,63 @@
+/* ======================== */
+/* Estilos para Envíos      */
+/* ======================== */
+
+.envios-layout {
+    /* Si quieres limitar el ancho general del contenido, puedes usar un max-width aquí */
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el diseño general de envíos */
+    padding: 20px;
+}
+
+#envios-titulo {
+    /* 1. Centra horizontalmente todo el contenido de texto dentro del div. */
+    text-align: center; 
+    
+    /* 2. Aseguramos que ocupe todo el ancho disponible para que el texto se centre correctamente. */
+    width: 100%; 
+    margin-bottom: 40px; /* Espacio antes de los logos */
+
+    /* Importante: Elimina 'display: flex' si solo quieres apilar texto,
+       ya que los elementos <h1> y <p> son bloques por defecto y se apilarán solos.
+       Usar 'justify-items: center' no funciona con Flexbox, se usa 'justify-content'.
+       Si lo dejas como bloque, funciona con 'text-align'.
+    */
+}
+
+#envios-titulo h1 {
+    font-size: 2.5em; /* Ajusta el tamaño si es necesario */
+    margin-bottom: 10px;
+}
+
+#envios-titulo p {
+    font-size: 1.1em;
+    color: #555; /* Color más suave para el párrafo */
+}
+.envios-logos {
+    /* 1. Usar Grid para la estructura */
+    display: grid;
+    /* 2. Definir 4 columnas de igual ancho (1fr) */
+    grid-template-columns: repeat(4, 1fr);
+    /* 3. Espacio entre las celdas (logos) */
+    gap: 20px; 
+    /* 4. Centrar el contenedor en la página (si es necesario) */
+    max-width: 900px;
+    margin: 30px auto; 
+}
+
+.envio-logo-item {
+    /* Estilos para las imágenes inyectadas por JS */
+    width: 100%; /* La imagen ocupa todo el ancho de la celda de Grid */
+    height: auto;
+    object-fit: contain; /* Asegura que el logo se vea bien sin recortarse */
+    padding: 10px; /* Un poco de padding dentro de cada celda */
+    border: 1px solid #eee; /* Opcional: Borde para visualización */
+    border-radius: 8px;
+}
+
+/* Para dispositivos más pequeños, quizás solo 2 columnas */
+@media (max-width: 768px) {
+    .envios-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
