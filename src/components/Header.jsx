@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'; // <--- 1. Importamos Link
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-    // Estado y referencias (sin cambios aquí)
     const [isOpen, setIsOpen] = useState(false);
     const navRef = useRef(null);
     const toggleRef = useRef(null);
@@ -11,12 +10,10 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
 
-    // Nueva función: Cierra el menú móvil al hacer clic en un enlace
     const handleLinkClick = () => {
         setIsOpen(false);
     };
 
-    // useEffect para manejar la lógica de cerrar al hacer click fuera (sin cambios)
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (isOpen && 
@@ -46,19 +43,17 @@ const Header = () => {
                 onClick={toggleMenu}
                 ref={toggleRef}
             >
-                {isOpen ? '✕' : '&#9776;'} 
+                {isOpen ? 'x' : '☰'} 
             </button>
 
             <nav 
                 className={`nav ${isOpen ? 'nav-open' : ''}`}
                 ref={navRef}
             >
-                {/* 2. Reemplazo de <a> por <Link> y uso de 'to' */}
                 <Link to="/" onClick={handleLinkClick}>Inicio</Link>
                 <Link to="/tienda" onClick={handleLinkClick}>Tienda</Link>
                 <Link to="/envios" onClick={handleLinkClick}>Envíos</Link>
                 <Link to="/contacto" onClick={handleLinkClick}>Contacto</Link>
-                {/* NOTA: Las rutas /envios y /contacto deben existir en App.jsx */}
             </nav>
         </header>
     );
