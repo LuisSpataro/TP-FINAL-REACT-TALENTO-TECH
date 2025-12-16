@@ -9,7 +9,7 @@ const Footer = () => {
                     <h4>INFO</h4>
                     <a href="#">Quiénes somos</a>
                     <h4>ENVIOS</h4>
-                    <Link to="/tienda" >Formas de envío</Link>
+                    <Link to="/envios">Formas de envío</Link>
                     <h4>SÍGUENOS</h4>
                     <a href="https://www.instagram.com/sportlion.jen/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
